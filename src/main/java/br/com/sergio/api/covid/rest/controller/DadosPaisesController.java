@@ -1,7 +1,9 @@
 package br.com.sergio.api.covid.rest.controller;
 
 import br.com.sergio.api.covid.comunicacao.ConsumoApi;
+import br.com.sergio.api.covid.rest.service.PaisesService;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
+import br.com.sergio.api.covid.utils.ConversorDados;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,20 +14,17 @@ import java.net.URISyntaxException;
 @RequestMapping("api")
 public class DadosPaisesController {
 	
-	ConsumoApi consumoApi;
+	PaisesService paisesService;
 	
-	ConstrutorDeURL construtorDeURL;
-	
-	
-	public DadosPaisesController(ConsumoApi consumoApi, ConstrutorDeURL construtorDeURL) {
-		this.consumoApi = consumoApi;
-		this.construtorDeURL = construtorDeURL;
+	public DadosPaisesController(PaisesService paisesService) {
+		this.paisesService = paisesService;
 	}
 	
 	@GetMapping("/paises/casos/{pais}")
 	public String obtemCasosPorPais(@PathVariable String pais) throws URISyntaxException {
 		try {
-			return consumoApi.obterDados(construtorDeURL.constroiURL(pais, "cases"));
+			return paisesService.obtemPaisesDaOrigem(pais, "cases");
+			
 		} catch (URISyntaxException ure) {
 			return "Erro ao montar a url";
 		}
@@ -34,7 +33,7 @@ public class DadosPaisesController {
 	@GetMapping("/paises/mortes/{pais}")
 	public String obtemMortesPorPais(@PathVariable String pais) {
 		try {
-			return consumoApi.obterDados(construtorDeURL.constroiURL(pais, "deaths"));
+			return paisesService.obtemPaisesDaOrigem(pais, "deaths");
 		} catch (URISyntaxException ure) {
 			return "Erro ao montar a url";
 		}
