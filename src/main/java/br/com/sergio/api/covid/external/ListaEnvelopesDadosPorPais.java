@@ -1,4 +1,4 @@
-package br.com.sergio.api.covid.model.external;
+package br.com.sergio.api.covid.external;
 
 import java.util.ArrayList;
 
