@@ -23,7 +23,7 @@ public class PaisesService {
 	}
 	
 	public String obtemPaisesDaOrigem(String pais, String tipo) throws URISyntaxException {
-		String json = consumoApi.obterDados(construtorDeURL.constroiURL(pais, "deaths"));
+		String json = consumoApi.obterDados(construtorDeURL.constroiURL(pais, tipo));
 		ListaEnvelopesDadosPorPais envelopeDadosPorPais = conversorDados.converterDadosDoJson(json, ListaEnvelopesDadosPorPais.class);
 		return envelopeDadosPorPais.toString();
 	}
