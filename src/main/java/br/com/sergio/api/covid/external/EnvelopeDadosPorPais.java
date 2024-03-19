@@ -14,7 +14,31 @@ public class EnvelopeDadosPorPais {
 	@Override
 	public String toString() {
 		return "EnvelopeDadosPorPais{" + "pais='" + pais + '\'' + ", region='" + region + '\'' +
-				", mapDataParaDados=" + mapDataParaDados + '}';
+				", mapDataParaDados=" + mapDataParaDados.toString() + '}';
+	}
+	
+	public String getPais() {
+		return pais;
+	}
+	
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+	
+	public String getRegion() {
+		return region;
+	}
+	
+	public void setRegion(String region) {
+		this.region = region;
+	}
+	
+	public Map<String, DadosPorDia> getMapDataParaDados() {
+		return mapDataParaDados;
+	}
+	
+	public void setMapDataParaDados(Map<String, DadosPorDia> mapDataParaDados) {
+		this.mapDataParaDados = mapDataParaDados;
 	}
 	
 }
