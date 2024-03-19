@@ -10,12 +10,12 @@ public class ConversorDados {
 	
 	private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	
-	public <T> T obterDadosDoJson(String json, Class<T> classe) {
+	public <T> T converterDadosDoJson(String json, Class<T> classe) {
 		System.out.println("Convertendo json para a classe: " + classe);
 		return gson.fromJson(json, classe);
 	}
 	
-	public <T> T obterDadosDoJson(String json, Type tipo) {
+	public <T> T converterDadosDoJson(String json, Type tipo) {
 		System.out.println("Convertendo json para o tipo" + tipo);
 		return gson.fromJson(json, tipo);
 	}
