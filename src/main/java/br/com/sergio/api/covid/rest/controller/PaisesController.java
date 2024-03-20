@@ -1,6 +1,9 @@
 package br.com.sergio.api.covid.rest.controller;
 
-import br.com.sergio.api.covid.comunicacao.ConsumoApi;
+
+import static br.com.sergio.api.covid.utils.Constantes.CASOS;
+import static br.com.sergio.api.covid.utils.Constantes.MORTES;
+
 import br.com.sergio.api.covid.rest.service.PaisesService;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
 import br.com.sergio.api.covid.utils.ConversorDados;
@@ -21,12 +24,12 @@ public class PaisesController {
 	}
 	
 	@GetMapping("/paises/casos/{pais}")
-	public String obtemCasosPorPais(@PathVariable String pais) throws URISyntaxException {
+	public String obtemCasosPorPais(@PathVariable String pais) {
 		try {
 			return paisesService.obtemPaisesDaOrigem(pais, "cases");
 			
 		} catch (URISyntaxException ure) {
-			return "Erro ao montar a url";
+			return "500 - Erro ao montar a url";
 		}
 	}
 	
@@ -35,7 +38,7 @@ public class PaisesController {
 		try {
 			return paisesService.obtemPaisesDaOrigem(pais, "deaths");
 		} catch (URISyntaxException ure) {
-			return "Erro ao montar a url";
+			return "500 - Erro ao montar a url";
 		}
 	}
 	
