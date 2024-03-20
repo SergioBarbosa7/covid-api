@@ -2,7 +2,7 @@ package br.com.sergio.api.covid.external.service;
 
 import br.com.sergio.api.covid.comunicacao.ConsumoApi;
 import br.com.sergio.api.covid.external.EnvelopeDadosPorPaisJson;
-import br.com.sergio.api.covid.external.ListaEnvelopesDadosPorPaisJson;
+import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
 import br.com.sergio.api.covid.external.handler.ExternalDadosPaisesHandler;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
 import br.com.sergio.api.covid.utils.ConversorDados;
@@ -34,8 +34,8 @@ public class ExternalDadosPaisesServices {
 	
 	public EnvelopeDadosPorPaisJson obtemEnvelopeDadosPais(String pais, String tipo) throws URISyntaxException {
 		String json = consumoApi.obterDados(construtorDeURL.constroiURL(pais, tipo));
-		ListaEnvelopesDadosPorPaisJson listaEnvelopesDadosPorPais = conversorDados.converterDadosDoJson(json,
-				ListaEnvelopesDadosPorPaisJson.class);
+		ExternalListaEnvelopesDadosPorPais listaEnvelopesDadosPorPais = conversorDados.converterDadosDoJson(json,
+				ExternalListaEnvelopesDadosPorPais.class);
 		return paisesHandler.trataPaisesComRegioes(listaEnvelopesDadosPorPais);
 	}
 }

@@ -3,13 +3,13 @@ package br.com.sergio.api.covid.external;
 import com.google.gson.annotations.SerializedName;
 import java.util.Map;
 
-public class EnvelopeDadosPorPais {
+public class EnvelopeDadosPorPaisJson {
 	
 	private String pais;
 	private String region;
 	
 	@SerializedName(value = "cases", alternate = "deaths")
-	private Map<String, DadosPorDia> mapDataParaDados;
+	private Map<String, ExternalDadosPorDia> mapDataParaDados;
 	
 	@Override
 	public String toString() {
@@ -33,11 +33,11 @@ public class EnvelopeDadosPorPais {
 		this.region = region;
 	}
 	
-	public Map<String, DadosPorDia> getMapDataParaDados() {
+	public Map<String, ExternalDadosPorDia> getMapDataParaDados() {
 		return mapDataParaDados;
 	}
 	
-	public void setMapDataParaDados(Map<String, DadosPorDia> mapDataParaDados) {
+	public void setMapDataParaDados(Map<String, ExternalDadosPorDia> mapDataParaDados) {
 		this.mapDataParaDados = mapDataParaDados;
 	}
 	

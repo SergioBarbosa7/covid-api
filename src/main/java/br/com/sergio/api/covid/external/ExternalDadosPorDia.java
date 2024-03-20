@@ -2,7 +2,7 @@ package br.com.sergio.api.covid.external;
 
 import com.google.gson.annotations.SerializedName;
 
-public class DadosPorDia {
+public class ExternalDadosPorDia {
 	private Integer total;
 	
 	@SerializedName("new")

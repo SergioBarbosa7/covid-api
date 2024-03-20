@@ -2,7 +2,7 @@ package br.com.sergio.api.covid.external.handler;
 
 import br.com.sergio.api.covid.external.ExternalDadosPorDia;
 import br.com.sergio.api.covid.external.EnvelopeDadosPorPaisJson;
-import br.com.sergio.api.covid.external.ListaEnvelopesDadosPorPaisJson;
+import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
 import org.springframework.stereotype.Component;
 import java.util.Map;
 import java.util.Set;
@@ -10,7 +10,7 @@ import java.util.Set;
 @Component
 public class ExternalDadosPaisesHandler {
 	
-	public EnvelopeDadosPorPaisJson trataPaisesComRegioes(ListaEnvelopesDadosPorPaisJson lista) {
+	public EnvelopeDadosPorPaisJson trataPaisesComRegioes(ExternalListaEnvelopesDadosPorPais lista) {
 		EnvelopeDadosPorPaisJson envelopeBase = lista.get(0);
 		Map<String, ExternalDadosPorDia> mapBase = envelopeBase.getMapDataParaDados();
 		for (int i = 1; i < lista.size(); i++) {
