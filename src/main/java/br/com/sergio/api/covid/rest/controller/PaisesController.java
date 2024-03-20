@@ -12,11 +12,11 @@ import java.net.URISyntaxException;
 
 @RestController
 @RequestMapping("api")
-public class DadosPaisesController {
+public class PaisesController {
 	
 	PaisesService paisesService;
 	
-	public DadosPaisesController(PaisesService paisesService) {
+	public PaisesController(PaisesService paisesService) {
 		this.paisesService = paisesService;
 	}
 	
