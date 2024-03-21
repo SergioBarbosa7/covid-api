@@ -3,7 +3,7 @@ package br.com.sergio.api.covid.external;
 import com.google.gson.annotations.SerializedName;
 import java.util.Map;
 
-public class EnvelopeDadosPorPaisJson {
+public class ExternalEnvelopeDadosPorPais {
 	
 	private String pais;
 	private String region;

@@ -10,8 +10,8 @@ import java.util.Set;
 @Component
 public class ExternalDadosPaisesHandler {
 	
-	public EnvelopeDadosPorPaisJson trataPaisesComRegioes(ExternalListaEnvelopesDadosPorPais lista) {
-		EnvelopeDadosPorPaisJson envelopeBase = lista.get(0);
+	public ExternalEnvelopeDadosPorPais trataPaisesComRegioes(ExternalListaEnvelopesDadosPorPais lista) {
+		ExternalEnvelopeDadosPorPais envelopeBase = lista.get(0);
 		Map<String, ExternalDadosPorDia> mapBase = envelopeBase.getMapDataParaDados();
 		for (int i = 1; i < lista.size(); i++) {
 			Map<String, ExternalDadosPorDia> mapComplementar = lista.get(i).getMapDataParaDados();

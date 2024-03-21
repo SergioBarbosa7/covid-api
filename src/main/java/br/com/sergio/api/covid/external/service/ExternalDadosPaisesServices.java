@@ -1,8 +1,12 @@
 package br.com.sergio.api.covid.external.service;
 
+import static br.com.sergio.api.covid.utils.Constantes.CASOS;
+import static br.com.sergio.api.covid.utils.Constantes.MORTES;
+
 import br.com.sergio.api.covid.comunicacao.ConsumoApi;
-import br.com.sergio.api.covid.external.EnvelopeDadosPorPaisJson;
+import br.com.sergio.api.covid.external.ExternalEnvelopeDadosPorPais;
 import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
+import br.com.sergio.api.covid.external.PacoteCasosEMortes;
 import br.com.sergio.api.covid.external.handler.ExternalDadosPaisesHandler;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
 import br.com.sergio.api.covid.utils.ConversorDados;
@@ -26,13 +30,13 @@ public class ExternalDadosPaisesServices {
 	}
 	
 	
-	public String obtemJsonDoEnvelope(String pais, String tipo) throws URISyntaxException {
-		EnvelopeDadosPorPaisJson envelope = obtemEnvelopeDadosPais(pais, tipo);
-		return conversorDados.converterDadosParaJson(envelope, EnvelopeDadosPorPaisJson.class);
+	public String obtemJsonDoEnvelope(String pais, String tipo)  {
+		ExternalEnvelopeDadosPorPais envelope = obtemEnvelopeDadosPais(pais, tipo);
+		return conversorDados.converterDadosParaJson(envelope, ExternalEnvelopeDadosPorPais.class);
 	}
 	
 	
-	public EnvelopeDadosPorPaisJson obtemEnvelopeDadosPais(String pais, String tipo) throws URISyntaxException {
+	public ExternalEnvelopeDadosPorPais obtemEnvelopeDadosPais(String pais, String tipo) {
 		String json = consumoApi.obterDados(construtorDeURL.constroiURL(pais, tipo));
 		ExternalListaEnvelopesDadosPorPais listaEnvelopesDadosPorPais = conversorDados.converterDadosDoJson(json,
 				ExternalListaEnvelopesDadosPorPais.class);
