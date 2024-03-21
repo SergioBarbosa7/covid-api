@@ -2,7 +2,6 @@ package br.com.sergio.api.covid.rest.service;
 
 import br.com.sergio.api.covid.external.service.ExternalDadosPaisesServices;
 import org.springframework.stereotype.Service;
-import java.net.URISyntaxException;
 
 @Service
 public class PaisesService {
@@ -13,8 +12,8 @@ public class PaisesService {
 		this.externalPaisesServices = externalPaisesServices;
 	}
 	
-	public String obtemPaisesDaOrigem(String pais, String casos) throws URISyntaxException {
-		return externalPaisesServices.obtemJsonDoEnvelope(pais, casos);
+	public String obtemPaisesDaOrigem(String pais, String tipo) {
+		return externalPaisesServices.obtemJsonDoEnvelope(pais, tipo);
 	}
 	
 	
