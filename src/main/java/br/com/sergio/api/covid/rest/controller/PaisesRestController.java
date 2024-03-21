@@ -12,21 +12,21 @@ import org.springframework.web.bind.annotation.RestController;
 import java.net.URISyntaxException;
 
 @RestController
-@RequestMapping("api")
-public class PaisesController {
+@RequestMapping("/api/paises/")
+public class PaisesRestController {
 	
-	PaisesService paisesService;
+	private PaisesService paisesService;
 	
-	public PaisesController(PaisesService paisesService) {
+	public PaisesRestController(PaisesService paisesService) {
 		this.paisesService = paisesService;
 	}
 	
-	@GetMapping("/paises/casos/{pais}")
+	@GetMapping("/casos/{pais}")
 	public String obtemCasosPorPais(@PathVariable String pais) {
 		return paisesService.obtemPaisesDaOrigem(pais, CASOS);
 	}
 	
-	@GetMapping("/paises/mortes/{pais}")
+	@GetMapping("/mortes/{pais}")
 	public String obtemMortesPorPais(@PathVariable String pais) {
 		return paisesService.obtemPaisesDaOrigem(pais, MORTES);
 	}
