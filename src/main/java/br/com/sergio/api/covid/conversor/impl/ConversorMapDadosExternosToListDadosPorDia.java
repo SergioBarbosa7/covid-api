@@ -10,25 +10,26 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ConversorMapExternalDadosDiaToListDadosDia
+public class ConversorMapDadosExternosToListDadosPorDia
 		implements IConversor<Map<String, ExternalDadosPorDia>, List<DadosPorDia>> {
 	
 	@Override
 	public List<DadosPorDia> converter(Map<String, ExternalDadosPorDia> entrada) {
-		List<DadosPorDia> listaDados = new ArrayList<DadosPorDia>();
+		List<DadosPorDia> listaDados = new ArrayList<>();
 		for (Map.Entry<String, ExternalDadosPorDia> entry : entrada.entrySet()) {
 			DadosPorDia dadosPorDia = new DadosPorDia();
+			dadosPorDia.setNovos(entry.getValue().getNovos());
+			dadosPorDia.setTotal(entry.getValue().getTotal());
 			try {
 				LocalDate date = LocalDate.parse(entry.getKey(), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 				dadosPorDia.setData(date);
 			} catch (DateTimeParseException e) {
 				dadosPorDia.setData(null);
 			}
-			dadosPorDia.setNovos(entry.getValue().getNovos());
-			dadosPorDia.setTotal(entry.getValue().getTotal());
 			listaDados.add(dadosPorDia);
 		}
 		return listaDados;
 	}
 	
 }
+
