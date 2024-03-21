@@ -23,20 +23,12 @@ public class PaisesController {
 	
 	@GetMapping("/paises/casos/{pais}")
 	public String obtemCasosPorPais(@PathVariable String pais) {
-		try {
-			return paisesService.obtemPaisesDaOrigem(pais, CASOS);
-		} catch (URISyntaxException ure) {
-			return "500 - Erro ao montar a url";
-		}
+		return paisesService.obtemPaisesDaOrigem(pais, CASOS);
 	}
 	
 	@GetMapping("/paises/mortes/{pais}")
 	public String obtemMortesPorPais(@PathVariable String pais) {
-		try {
-			return paisesService.obtemPaisesDaOrigem(pais, MORTES);
-		} catch (URISyntaxException ure) {
-			return "500 - Erro ao montar a url";
-		}
+		return paisesService.obtemPaisesDaOrigem(pais, MORTES);
 	}
 	
 }
