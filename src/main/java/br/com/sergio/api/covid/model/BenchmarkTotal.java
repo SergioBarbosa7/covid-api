@@ -7,10 +7,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import java.util.Date;
 
 @Entity
+@Table(name = "benchmark_total")
 public class BenchmarkTotal {
 
 	@Id
@@ -23,14 +25,14 @@ public class BenchmarkTotal {
 	@Column(name = "data_inicial")
 	private Date dataInicial;
 	
-	@Column(name = "data_inicial")
+	@Column(name = "data_final")
 	private Date dataFinal;
 	
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "id_benchmark_pais_1")
 	private BenchmarkPais benchmarkPais1;
 	
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "id_benchmark_pais_2")
 	private BenchmarkPais benchmarkPais2;
 	
