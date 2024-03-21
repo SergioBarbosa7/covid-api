@@ -6,12 +6,11 @@ import static br.com.sergio.api.covid.utils.Constantes.MORTES;
 import br.com.sergio.api.covid.comunicacao.ConsumoApi;
 import br.com.sergio.api.covid.external.ExternalEnvelopeDadosPorPais;
 import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
-import br.com.sergio.api.covid.external.PacoteCasosEMortes;
+import br.com.sergio.api.covid.external.ExternalPacoteCasosEMortes;
 import br.com.sergio.api.covid.external.handler.ExternalDadosPaisesHandler;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
 import br.com.sergio.api.covid.utils.ConversorDados;
 import org.springframework.stereotype.Service;
-import java.net.URISyntaxException;
 
 @Service
 public class ExternalDadosPaisesServices {
@@ -43,11 +42,11 @@ public class ExternalDadosPaisesServices {
 		return paisesHandler.trataPaisesComRegioes(listaEnvelopesDadosPorPais);
 	}
 	
-	public PacoteCasosEMortes obtemPacoteCasosEMortes(String pais)  {
+	public ExternalPacoteCasosEMortes obtemPacoteCasosEMortes(String pais)  {
 		ExternalEnvelopeDadosPorPais envelopeCasos = obtemEnvelopeDadosPais(pais, CASOS);
 		ExternalEnvelopeDadosPorPais envelopeMortes = obtemEnvelopeDadosPais(pais, MORTES);
 		
-		PacoteCasosEMortes pacote = new PacoteCasosEMortes();
+		ExternalPacoteCasosEMortes pacote = new ExternalPacoteCasosEMortes();
 		pacote.setDadosCasos(envelopeCasos.getMapDataParaDados());
 		pacote.setDadosMortes(envelopeMortes.getMapDataParaDados());
 		pacote.setPais(pais);

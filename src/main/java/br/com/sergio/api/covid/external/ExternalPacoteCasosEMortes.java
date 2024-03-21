@@ -1,10 +1,9 @@
 package br.com.sergio.api.covid.external;
 
-import br.com.sergio.api.covid.model.DadosPorDia;
 import java.time.LocalDate;
 import java.util.Map;
 
-public class PacoteCasosEMortes {
+public class ExternalPacoteCasosEMortes {
 	private String pais;
 	private LocalDate dataInicio;
 	private LocalDate dataFinal;
