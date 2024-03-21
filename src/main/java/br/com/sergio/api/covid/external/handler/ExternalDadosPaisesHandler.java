@@ -1,7 +1,7 @@
 package br.com.sergio.api.covid.external.handler;
 
 import br.com.sergio.api.covid.external.ExternalDadosPorDia;
-import br.com.sergio.api.covid.external.EnvelopeDadosPorPaisJson;
+import br.com.sergio.api.covid.external.ExternalEnvelopeDadosPorPais;
 import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
 import org.springframework.stereotype.Component;
 import java.util.Map;
