@@ -42,4 +42,15 @@ public class ExternalDadosPaisesServices {
 				ExternalListaEnvelopesDadosPorPais.class);
 		return paisesHandler.trataPaisesComRegioes(listaEnvelopesDadosPorPais);
 	}
+	
+	public PacoteCasosEMortes obtemPacoteCasosEMortes(String pais)  {
+		ExternalEnvelopeDadosPorPais envelopeCasos = obtemEnvelopeDadosPais(pais, CASOS);
+		ExternalEnvelopeDadosPorPais envelopeMortes = obtemEnvelopeDadosPais(pais, MORTES);
+		
+		PacoteCasosEMortes pacote = new PacoteCasosEMortes();
+		pacote.setDadosCasos(envelopeCasos.getMapDataParaDados());
+		pacote.setDadosMortes(envelopeMortes.getMapDataParaDados());
+		pacote.setPais(pais);
+		return pacote;
+	}
 }
