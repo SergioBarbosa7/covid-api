@@ -14,16 +14,14 @@ public class ConstrutorDeURL {
 	private static final String ENDPOINT = "/v1/covid19";
 	
 	
-	public String constroiURL(String pais,  String tipo) throws URISyntaxException {
-		String link = new URIBuilder()
-				.setScheme("https")
-				.setHost(URL_BASE)
-				.setPath(ENDPOINT)
-				.addParameter("country", pais)
-				.addParameter("type", tipo)
-				.build().toString();
+	public String constroiURL(String pais,  String tipo) {
+		try {
+			String link = new URIBuilder().setScheme("https").setHost(URL_BASE).setPath(ENDPOINT)
+					.addParameter("country", pais).addParameter("type", tipo).build().toString();
+			return link;
+		} catch (URISyntaxException uriSyntaxException){
+			throw new RuntimeException(uriSyntaxException);
+		}
 		
-		
-		return link;
 	}
 }
