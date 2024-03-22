@@ -35,11 +35,8 @@ public class BenchmarkTotalService {
 	
 	public BenchmarkTotal obtemOptionalBenchmarkTotalPeloId(Long id){
 		Optional<BenchmarkTotal> optionalBenchmark =  benchmarkTotalRepository.findById(id);
-		if(optionalBenchmark.isPresent()){
-			return optionalBenchmark.get();
-		}
+		return optionalBenchmark.orElse(null);
 		
-		return null;
 	}
 	
 }
