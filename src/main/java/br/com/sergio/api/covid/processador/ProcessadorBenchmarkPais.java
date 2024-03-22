@@ -18,11 +18,10 @@ public class ProcessadorBenchmarkPais {
 	private ProcessadorDadosDia processadorDadosDia;
 	
 	private ProcessadorJsonBenchmarkPais processadorJsonBenchmarkPais;
-	private ConversorDados conversorDados;
 	
-	public ProcessadorBenchmarkPais(ConversorDados conversorDados) {
+	public ProcessadorBenchmarkPais(ProcessadorJsonBenchmarkPais processadorJsonBenchmarkPais) {
 		processadorDadosDia = new ProcessadorDadosDia();
-		this.conversorDados = conversorDados;
+		this.processadorJsonBenchmarkPais = processadorJsonBenchmarkPais;
 	}
 	
 	public BenchmarkPais processar(ExternalPacoteCasosEMortes externalPacoteCasosEMortes) {
@@ -39,6 +38,7 @@ public class ProcessadorBenchmarkPais {
 		benchmarkPais.setDataInicial(Date.valueOf(externalPacoteCasosEMortes.getDataInicio()));
 		benchmarkPais.setDataFinal(Date.valueOf(externalPacoteCasosEMortes.getDataFinal()));
 		benchmarkPais.setJsonsBenchmarkPais(jsonsBenchmarkPais);
+		jsonsBenchmarkPais.setBenchmarkPais(benchmarkPais);
 		return benchmarkPais;
 	}
 	
