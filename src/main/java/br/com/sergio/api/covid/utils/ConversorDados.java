@@ -1,14 +1,17 @@
 package br.com.sergio.api.covid.utils;
 
+import br.com.sergio.api.covid.utils.json.adapter.LocalDateAdapter;
 import org.springframework.stereotype.Component;
 import java.lang.reflect.Type;
+import java.time.LocalDate;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 @Component
 public class ConversorDados {
 	
-	private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+	private final Gson gson = new GsonBuilder().setPrettyPrinting()
+			.registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).create();
 	
 	public <T> T converterDadosDoJson(String json, Class<T> classe) {
 		System.out.println("Convertendo json para a classe: " + classe);
