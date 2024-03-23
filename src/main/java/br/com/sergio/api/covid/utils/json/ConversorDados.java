@@ -13,7 +13,10 @@ import com.google.gson.GsonBuilder;
 public class ConversorDados {
 	
 	private final Gson gson = new GsonBuilder().setPrettyPrinting()
-			.registerTypeAdapter(LocalDate.class, new LocalDateAdapter()).create();
+			.addSerializationExclusionStrategy(new JsonIgnoreExclusionStrategy())
+			.addDeserializationExclusionStrategy(new JsonIgnoreExclusionStrategy())
+			.registerTypeAdapter(LocalDate.class, new LocalDateDeserializer())
+			.registerTypeAdapter(LocalDate.class, new LocalDateSerializer()).create();
 	
 	public <T> T converterDadosDoJson(String json, Class<T> classe) {
 		System.out.println("Convertendo json para a classe: " + classe);
