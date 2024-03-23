@@ -41,4 +41,15 @@ public class BenchmarkTotalService {
 		return null;
 	}
 	
+	public void deletaBenchmarkTotalPeloID(Long id) {
+		benchmarkTotalRepository.deleteById(id);
+	}
+	
+	public List<ResumoBenchmarkDTO> obterListaBenchmarks() {
+		List<ResumoBenchmarkDTO> lista = new ArrayList<>();
+		benchmarkTotalRepository.findAll().forEach(b -> {
+			lista.add(resumoBenchmarkDTOFactory.geraResumoBenchmark(b));
+		});
+		return lista;
+	}
 }
