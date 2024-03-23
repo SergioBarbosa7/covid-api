@@ -1,0 +1,997 @@
+[
+  {
+    "pais_sem_acentos": "Afeganistao",
+    "pais_portugues": "Afeganistão",
+    "pais_ingles": "Afghanistan"
+  },
+  {
+    "pais_sem_acentos": "Albania",
+    "pais_portugues": "Albânia",
+    "pais_ingles": "Albania"
+  },
+  {
+    "pais_sem_acentos": "Argelia",
+    "pais_portugues": "Argélia",
+    "pais_ingles": "Algeria"
+  },
+  {
+    "pais_sem_acentos": "Andorra",
+    "pais_portugues": "Andorra",
+    "pais_ingles": "Andorra"
+  },
+  {
+    "pais_sem_acentos": "Angola",
+    "pais_portugues": "Angola",
+    "pais_ingles": "Angola"
+  },
+  {
+    "pais_sem_acentos": "Antartica",
+    "pais_portugues": "Antártica",
+    "pais_ingles": "Antarctica"
+  },
+  {
+    "pais_sem_acentos": "Antigua e Barbuda",
+    "pais_portugues": "Antígua e Barbuda",
+    "pais_ingles": "Antigua and Barbuda"
+  },
+  {
+    "pais_sem_acentos": "Argentina",
+    "pais_portugues": "Argentina",
+    "pais_ingles": "Argentina"
+  },
+  {
+    "pais_sem_acentos": "Armenia",
+    "pais_portugues": "Armênia",
+    "pais_ingles": "Armenia"
+  },
+  {
+    "pais_sem_acentos": "Australia",
+    "pais_portugues": "Austrália",
+    "pais_ingles": "Australia"
+  },
+  {
+    "pais_sem_acentos": "Austria",
+    "pais_portugues": "Áustria",
+    "pais_ingles": "Austria"
+  },
+  {
+    "pais_sem_acentos": "Azerbaijao",
+    "pais_portugues": "Azerbaijão",
+    "pais_ingles": "Azerbaijan"
+  },
+  {
+    "pais_sem_acentos": "Bahamas",
+    "pais_portugues": "Bahamas",
+    "pais_ingles": "Bahamas"
+  },
+  {
+    "pais_sem_acentos": "Bahrain",
+    "pais_portugues": "Bahrain",
+    "pais_ingles": "Bahrain"
+  },
+  {
+    "pais_sem_acentos": "Bangladesh",
+    "pais_portugues": "Bangladesh",
+    "pais_ingles": "Bangladesh"
+  },
+  {
+    "pais_sem_acentos": "Barbados",
+    "pais_portugues": "Barbados",
+    "pais_ingles": "Barbados"
+  },
+  {
+    "pais_sem_acentos": "Belarus",
+    "pais_portugues": "Belarus",
+    "pais_ingles": "Belarus"
+  },
+  {
+    "pais_sem_acentos": "Belgica",
+    "pais_portugues": "Bélgica",
+    "pais_ingles": "Belgium"
+  },
+  {
+    "pais_sem_acentos": "Belize",
+    "pais_portugues": "Belize",
+    "pais_ingles": "Belize"
+  },
+  {
+    "pais_sem_acentos": "Benin",
+    "pais_portugues": "Benin",
+    "pais_ingles": "Benin"
+  },
+  {
+    "pais_sem_acentos": "Butao",
+    "pais_portugues": "Butão",
+    "pais_ingles": "Bhutan"
+  },
+  {
+    "pais_sem_acentos": "Bolivia",
+    "pais_portugues": "Bolívia",
+    "pais_ingles": "Bolivia"
+  },
+  {
+    "pais_sem_acentos": "Bosnia e Herzegovina",
+    "pais_portugues": "Bósnia e Herzegovina",
+    "pais_ingles": "Bosnia and Herzegovina"
+  },
+  {
+    "pais_sem_acentos": "Botsuana",
+    "pais_portugues": "Botsuana",
+    "pais_ingles": "Botswana"
+  },
+  {
+    "pais_sem_acentos": "Brasil",
+    "pais_portugues": "Brasil",
+    "pais_ingles": "Brazil"
+  },
+  {
+    "pais_sem_acentos": "Brunei",
+    "pais_portugues": "Brunei",
+    "pais_ingles": "Brunei"
+  },
+  {
+    "pais_sem_acentos": "Bulgaria",
+    "pais_portugues": "Bulgária",
+    "pais_ingles": "Bulgaria"
+  },
+  {
+    "pais_sem_acentos": "Burkina Faso",
+    "pais_portugues": "Burkina Faso",
+    "pais_ingles": "Burkina Faso"
+  },
+  {
+    "pais_sem_acentos": "Birmania",
+    "pais_portugues": "Birmânia",
+    "pais_ingles": "Burma"
+  },
+  {
+    "pais_sem_acentos": "Burundi",
+    "pais_portugues": "Burundi",
+    "pais_ingles": "Burundi"
+  },
+  {
+    "pais_sem_acentos": "Cabo Verde",
+    "pais_portugues": "Cabo Verde",
+    "pais_ingles": "Cabo Verde"
+  },
+  {
+    "pais_sem_acentos": "Camboja",
+    "pais_portugues": "Camboja",
+    "pais_ingles": "Cambodia"
+  },
+  {
+    "pais_sem_acentos": "Camaroes",
+    "pais_portugues": "Camarões",
+    "pais_ingles": "Cameroon"
+  },
+  {
+    "pais_sem_acentos": "Canada",
+    "pais_portugues": "Canadá",
+    "pais_ingles": "Canada"
+  },
+  {
+    "pais_sem_acentos": "Republica Centro-Africana",
+    "pais_portugues": "República Centro-Africana",
+    "pais_ingles": "Central African Republic"
+  },
+  {
+    "pais_sem_acentos": "Chade",
+    "pais_portugues": "Chade",
+    "pais_ingles": "Chad"
+  },
+  {
+    "pais_sem_acentos": "Chile",
+    "pais_portugues": "Chile",
+    "pais_ingles": "Chile"
+  },
+  {
+    "pais_sem_acentos": "China",
+    "pais_portugues": "China",
+    "pais_ingles": "China"
+  },
+  {
+    "pais_sem_acentos": "Colombia",
+    "pais_portugues": "Colômbia",
+    "pais_ingles": "Colombia"
+  },
+  {
+    "pais_sem_acentos": "Comores",
+    "pais_portugues": "Comores",
+    "pais_ingles": "Comoros"
+  },
+  {
+    "pais_sem_acentos": "Republica do Congo",
+    "pais_portugues": "República do Congo",
+    "pais_ingles": "Congo (Brazzaville)"
+  },
+  {
+    "pais_sem_acentos": "Republica Democratica do Congo",
+    "pais_portugues": "República Democrática do Congo",
+    "pais_ingles": "Congo (Kinshasa)"
+  },
+  {
+    "pais_sem_acentos": "Costa Rica",
+    "pais_portugues": "Costa Rica",
+    "pais_ingles": "Costa Rica"
+  },
+  {
+    "pais_sem_acentos": "Costa do Marfim",
+    "pais_portugues": "Costa do Marfim",
+    "pais_ingles": "Cote d'Ivoire"
+  },
+  {
+    "pais_sem_acentos": "Croacia",
+    "pais_portugues": "Croácia",
+    "pais_ingles": "Croatia"
+  },
+  {
+    "pais_sem_acentos": "Cuba",
+    "pais_portugues": "Cuba",
+    "pais_ingles": "Cuba"
+  },
+  {
+    "pais_sem_acentos": "Chipre",
+    "pais_portugues": "Chipre",
+    "pais_ingles": "Cyprus"
+  },
+  {
+    "pais_sem_acentos": "Republica Checa",
+    "pais_portugues": "República Checa",
+    "pais_ingles": "Czechia"
+  },
+  {
+    "pais_sem_acentos": "Dinamarca",
+    "pais_portugues": "Dinamarca",
+    "pais_ingles": "Denmark"
+  },
+  {
+    "pais_sem_acentos": "Diamond Princess",
+    "pais_portugues": "Diamond Princess",
+    "pais_ingles": "Diamond Princess"
+  },
+  {
+    "pais_sem_acentos": "Djibouti",
+    "pais_portugues": "Djibouti",
+    "pais_ingles": "Djibouti"
+  },
+  {
+    "pais_sem_acentos": "Dominica",
+    "pais_portugues": "Domínica",
+    "pais_ingles": "Dominica"
+  },
+  {
+    "pais_sem_acentos": "Republica Dominicana",
+    "pais_portugues": "República Dominicana",
+    "pais_ingles": "Dominican Republic"
+  },
+  {
+    "pais_sem_acentos": "Equador",
+    "pais_portugues": "Equador",
+    "pais_ingles": "Ecuador"
+  },
+  {
+    "pais_sem_acentos": "Egito",
+    "pais_portugues": "Egito",
+    "pais_ingles": "Egypt"
+  },
+  {
+    "pais_sem_acentos": "El Salvador",
+    "pais_portugues": "El Salvador",
+    "pais_ingles": "El Salvador"
+  },
+  {
+    "pais_sem_acentos": "Guine Equatorial",
+    "pais_portugues": "Guiné Equatorial",
+    "pais_ingles": "Equatorial Guinea"
+  },
+  {
+    "pais_sem_acentos": "Eritreia",
+    "pais_portugues": "Eritreia",
+    "pais_ingles": "Eritrea"
+  },
+  {
+    "pais_sem_acentos": "Estonia",
+    "pais_portugues": "Estônia",
+    "pais_ingles": "Estonia"
+  },
+  {
+    "pais_sem_acentos": "Eswatini",
+    "pais_portugues": "Eswatini",
+    "pais_ingles": "Eswatini"
+  },
+  {
+    "pais_sem_acentos": "Etiopia",
+    "pais_portugues": "Etiópia",
+    "pais_ingles": "Ethiopia"
+  },
+  {
+    "pais_sem_acentos": "Fiji",
+    "pais_portugues": "Fiji",
+    "pais_ingles": "Fiji"
+  },
+  {
+    "pais_sem_acentos": "Finlandia",
+    "pais_portugues": "Finlândia",
+    "pais_ingles": "Finland"
+  },
+  {
+    "pais_sem_acentos": "Franca",
+    "pais_portugues": "França",
+    "pais_ingles": "France"
+  },
+  {
+    "pais_sem_acentos": "Gabao",
+    "pais_portugues": "Gabão",
+    "pais_ingles": "Gabon"
+  },
+  {
+    "pais_sem_acentos": "Gambia",
+    "pais_portugues": "Gâmbia",
+    "pais_ingles": "Gambia"
+  },
+  {
+    "pais_sem_acentos": "Georgia",
+    "pais_portugues": "Geórgia",
+    "pais_ingles": "Georgia"
+  },
+  {
+    "pais_sem_acentos": "Alemanha",
+    "pais_portugues": "Alemanha",
+    "pais_ingles": "Germany"
+  },
+  {
+    "pais_sem_acentos": "Gana",
+    "pais_portugues": "Gana",
+    "pais_ingles": "Ghana"
+  },
+  {
+    "pais_sem_acentos": "Grecia",
+    "pais_portugues": "Grécia",
+    "pais_ingles": "Greece"
+  },
+  {
+    "pais_sem_acentos": "Granada",
+    "pais_portugues": "Granada",
+    "pais_ingles": "Grenada"
+  },
+  {
+    "pais_sem_acentos": "Guatemala",
+    "pais_portugues": "Guatemala",
+    "pais_ingles": "Guatemala"
+  },
+  {
+    "pais_sem_acentos": "Guine",
+    "pais_portugues": "Guiné",
+    "pais_ingles": "Guinea"
+  },
+  {
+    "pais_sem_acentos": "Guine-Bissau",
+    "pais_portugues": "Guiné-Bissau",
+    "pais_ingles": "Guinea-Bissau"
+  },
+  {
+    "pais_sem_acentos": "Guiana",
+    "pais_portugues": "Guiana",
+    "pais_ingles": "Guyana"
+  },
+  {
+    "pais_sem_acentos": "Haiti",
+    "pais_portugues": "Haiti",
+    "pais_ingles": "Haiti"
+  },
+  {
+    "pais_sem_acentos": "Santa Se",
+    "pais_portugues": "Santa Sé",
+    "pais_ingles": "Holy See"
+  },
+  {
+    "pais_sem_acentos": "Honduras",
+    "pais_portugues": "Honduras",
+    "pais_ingles": "Honduras"
+  },
+  {
+    "pais_sem_acentos": "Hungria",
+    "pais_portugues": "Hungria",
+    "pais_ingles": "Hungary"
+  },
+  {
+    "pais_sem_acentos": "Islandia",
+    "pais_portugues": "Islândia",
+    "pais_ingles": "Iceland"
+  },
+  {
+    "pais_sem_acentos": "India",
+    "pais_portugues": "Índia",
+    "pais_ingles": "India"
+  },
+  {
+    "pais_sem_acentos": "Indonesia",
+    "pais_portugues": "Indonésia",
+    "pais_ingles": "Indonesia"
+  },
+  {
+    "pais_sem_acentos": "Ira",
+    "pais_portugues": "Irã",
+    "pais_ingles": "Iran"
+  },
+  {
+    "pais_sem_acentos": "Iraque",
+    "pais_portugues": "Iraque",
+    "pais_ingles": "Iraq"
+  },
+  {
+    "pais_sem_acentos": "Irlanda",
+    "pais_portugues": "Irlanda",
+    "pais_ingles": "Ireland"
+  },
+  {
+    "pais_sem_acentos": "Israel",
+    "pais_portugues": "Israel",
+    "pais_ingles": "Israel"
+  },
+  {
+    "pais_sem_acentos": "Italia",
+    "pais_portugues": "Itália",
+    "pais_ingles": "Italy"
+  },
+  {
+    "pais_sem_acentos": "Jamaica",
+    "pais_portugues": "Jamaica",
+    "pais_ingles": "Jamaica"
+  },
+  {
+    "pais_sem_acentos": "Japao",
+    "pais_portugues": "Japão",
+    "pais_ingles": "Japan"
+  },
+  {
+    "pais_sem_acentos": "Jordania",
+    "pais_portugues": "Jordânia",
+    "pais_ingles": "Jordan"
+  },
+  {
+    "pais_sem_acentos": "Cazaquistao",
+    "pais_portugues": "Cazaquistão",
+    "pais_ingles": "Kazakhstan"
+  },
+  {
+    "pais_sem_acentos": "Quenia",
+    "pais_portugues": "Quênia",
+    "pais_ingles": "Kenya"
+  },
+  {
+    "pais_sem_acentos": "Kiribati",
+    "pais_portugues": "Kiribati",
+    "pais_ingles": "Kiribati"
+  },
+  {
+    "pais_sem_acentos": "Coreia do Norte",
+    "pais_portugues": "Coreia do Norte",
+    "pais_ingles": "Korea, North"
+  },
+  {
+    "pais_sem_acentos": "Coreia do Sul",
+    "pais_portugues": "Coreia do Sul",
+    "pais_ingles": "Korea, South"
+  },
+  {
+    "pais_sem_acentos": "Kosovo",
+    "pais_portugues": "Kosovo",
+    "pais_ingles": "Kosovo"
+  },
+  {
+    "pais_sem_acentos": "Kuwait",
+    "pais_portugues": "Kuwait",
+    "pais_ingles": "Kuwait"
+  },
+  {
+    "pais_sem_acentos": "Quirguistao",
+    "pais_portugues": "Quirguistão",
+    "pais_ingles": "Kyrgyzstan"
+  },
+  {
+    "pais_sem_acentos": "Laos",
+    "pais_portugues": "Laos",
+    "pais_ingles": "Laos"
+  },
+  {
+    "pais_sem_acentos": "Letonia",
+    "pais_portugues": "Letônia",
+    "pais_ingles": "Latvia"
+  },
+  {
+    "pais_sem_acentos": "Libano",
+    "pais_portugues": "Líbano",
+    "pais_ingles": "Lebanon"
+  },
+  {
+    "pais_sem_acentos": "Lesoto",
+    "pais_portugues": "Lesoto",
+    "pais_ingles": "Lesotho"
+  },
+  {
+    "pais_sem_acentos": "Liberia",
+    "pais_portugues": "Libéria",
+    "pais_ingles": "Liberia"
+  },
+  {
+    "pais_sem_acentos": "Libia",
+    "pais_portugues": "Líbia",
+    "pais_ingles": "Libya"
+  },
+  {
+    "pais_sem_acentos": "Listenstaine",
+    "pais_portugues": "Listenstaine",
+    "pais_ingles": "Liechtenstein"
+  },
+  {
+    "pais_sem_acentos": "Lituania",
+    "pais_portugues": "Lituânia",
+    "pais_ingles": "Lithuania"
+  },
+  {
+    "pais_sem_acentos": "Luxemburgo",
+    "pais_portugues": "Luxemburgo",
+    "pais_ingles": "Luxembourg"
+  },
+  {
+    "pais_sem_acentos": "MS Zaandam",
+    "pais_portugues": "MS Zaandam",
+    "pais_ingles": "MS Zaandam"
+  },
+  {
+    "pais_sem_acentos": "Madagascar",
+    "pais_portugues": "Madagascar",
+    "pais_ingles": "Madagascar"
+  },
+  {
+    "pais_sem_acentos": "Malaui",
+    "pais_portugues": "Malaui",
+    "pais_ingles": "Malawi"
+  },
+  {
+    "pais_sem_acentos": "Malasia",
+    "pais_portugues": "Malásia",
+    "pais_ingles": "Malaysia"
+  },
+  {
+    "pais_sem_acentos": "Maldivas",
+    "pais_portugues": "Maldivas",
+    "pais_ingles": "Maldives"
+  },
+  {
+    "pais_sem_acentos": "Mali",
+    "pais_portugues": "Mali",
+    "pais_ingles": "Mali"
+  },
+  {
+    "pais_sem_acentos": "Malta",
+    "pais_portugues": "Malta",
+    "pais_ingles": "Malta"
+  },
+  {
+    "pais_sem_acentos": "Ilhas Marshall",
+    "pais_portugues": "Ilhas Marshall",
+    "pais_ingles": "Marshall Islands"
+  },
+  {
+    "pais_sem_acentos": "Mauritania",
+    "pais_portugues": "Mauritânia",
+    "pais_ingles": "Mauritania"
+  },
+  {
+    "pais_sem_acentos": "Mauricio",
+    "pais_portugues": "Maurício",
+    "pais_ingles": "Mauritius"
+  },
+  {
+    "pais_sem_acentos": "Mexico",
+    "pais_portugues": "México",
+    "pais_ingles": "Mexico"
+  },
+  {
+    "pais_sem_acentos": "Micronesia",
+    "pais_portugues": "Micronésia",
+    "pais_ingles": "Micronesia"
+  },
+  {
+    "pais_sem_acentos": "Moldavia",
+    "pais_portugues": "Moldávia",
+    "pais_ingles": "Moldova"
+  },
+  {
+    "pais_sem_acentos": "Monaco",
+    "pais_portugues": "Mônaco",
+    "pais_ingles": "Monaco"
+  },
+  {
+    "pais_sem_acentos": "Mongolia",
+    "pais_portugues": "Mongólia",
+    "pais_ingles": "Mongolia"
+  },
+  {
+    "pais_sem_acentos": "Montenegro",
+    "pais_portugues": "Montenegro",
+    "pais_ingles": "Montenegro"
+  },
+  {
+    "pais_sem_acentos": "Marrocos",
+    "pais_portugues": "Marrocos",
+    "pais_ingles": "Morocco"
+  },
+  {
+    "pais_sem_acentos": "Mocambique",
+    "pais_portugues": "Moçambique",
+    "pais_ingles": "Mozambique"
+  },
+  {
+    "pais_sem_acentos": "Namibia",
+    "pais_portugues": "Namíbia",
+    "pais_ingles": "Namibia"
+  },
+  {
+    "pais_sem_acentos": "Nauru",
+    "pais_portugues": "Nauru",
+    "pais_ingles": "Nauru"
+  },
+  {
+    "pais_sem_acentos": "Pais Nepal",
+    "pais_portugues": "País Nepal",
+    "pais_ingles": "Nepal"
+  },
+  {
+    "pais_sem_acentos": "Paises Baixos",
+    "pais_portugues": "Países Baixos",
+    "pais_ingles": "Netherlands"
+  },
+  {
+    "pais_sem_acentos": "Nova Zelandia",
+    "pais_portugues": "Nova Zelândia",
+    "pais_ingles": "New Zealand"
+  },
+  {
+    "pais_sem_acentos": "Nicaragua",
+    "pais_portugues": "Nicarágua",
+    "pais_ingles": "Nicaragua"
+  },
+  {
+    "pais_sem_acentos": "Niger",
+    "pais_portugues": "Níger",
+    "pais_ingles": "Niger"
+  },
+  {
+    "pais_sem_acentos": "Nigeria",
+    "pais_portugues": "Nigéria",
+    "pais_ingles": "Nigeria"
+  },
+  {
+    "pais_sem_acentos": "Macedonia do Norte",
+    "pais_portugues": "Macedônia do Norte",
+    "pais_ingles": "North Macedonia"
+  },
+  {
+    "pais_sem_acentos": "Noruega",
+    "pais_portugues": "Noruega",
+    "pais_ingles": "Norway"
+  },
+  {
+    "pais_sem_acentos": "Oma",
+    "pais_portugues": "Omã",
+    "pais_ingles": "Oman"
+  },
+  {
+    "pais_sem_acentos": "Paquistao",
+    "pais_portugues": "Paquistão",
+    "pais_ingles": "Pakistan"
+  },
+  {
+    "pais_sem_acentos": "Palau",
+    "pais_portugues": "Palau",
+    "pais_ingles": "Palau"
+  },
+  {
+    "pais_sem_acentos": "Panama",
+    "pais_portugues": "Panamá",
+    "pais_ingles": "Panama"
+  },
+  {
+    "pais_sem_acentos": "Papua Nova Guine",
+    "pais_portugues": "Papua Nova Guiné",
+    "pais_ingles": "Papua New Guinea"
+  },
+  {
+    "pais_sem_acentos": "Paraguai",
+    "pais_portugues": "Paraguai",
+    "pais_ingles": "Paraguay"
+  },
+  {
+    "pais_sem_acentos": "Peru",
+    "pais_portugues": "Peru",
+    "pais_ingles": "Peru"
+  },
+  {
+    "pais_sem_acentos": "Filipinas",
+    "pais_portugues": "Filipinas",
+    "pais_ingles": "Philippines"
+  },
+  {
+    "pais_sem_acentos": "Polonia",
+    "pais_portugues": "Polônia",
+    "pais_ingles": "Poland"
+  },
+  {
+    "pais_sem_acentos": "Portugal",
+    "pais_portugues": "Portugal",
+    "pais_ingles": "Portugal"
+  },
+  {
+    "pais_sem_acentos": "Catar",
+    "pais_portugues": "Catar",
+    "pais_ingles": "Qatar"
+  },
+  {
+    "pais_sem_acentos": "Romenia",
+    "pais_portugues": "Romênia",
+    "pais_ingles": "Romania"
+  },
+  {
+    "pais_sem_acentos": "Russia",
+    "pais_portugues": "Rússia",
+    "pais_ingles": "Russia"
+  },
+  {
+    "pais_sem_acentos": "Ruanda",
+    "pais_portugues": "Ruanda",
+    "pais_ingles": "Rwanda"
+  },
+  {
+    "pais_sem_acentos": "Sao Cristovao e Nevis",
+    "pais_portugues": "São Cristóvão e Nevis",
+    "pais_ingles": "Saint Kitts and Nevis"
+  },
+  {
+    "pais_sem_acentos": "Santa Lucia",
+    "pais_portugues": "Santa Lúcia",
+    "pais_ingles": "Saint Lucia"
+  },
+  {
+    "pais_sem_acentos": "Sao Vicente e Granadinas",
+    "pais_portugues": "São Vicente e Granadinas",
+    "pais_ingles": "Saint Vincent and the Grenadines"
+  },
+  {
+    "pais_sem_acentos": "Samoa",
+    "pais_portugues": "Samoa",
+    "pais_ingles": "Samoa"
+  },
+  {
+    "pais_sem_acentos": "San Marino",
+    "pais_portugues": "San Marino",
+    "pais_ingles": "San Marino"
+  },
+  {
+    "pais_sem_acentos": "Sao Tome e Principe",
+    "pais_portugues": "São Tomé e Príncipe",
+    "pais_ingles": "Sao Tome and Principe"
+  },
+  {
+    "pais_sem_acentos": "Arabia Saudita",
+    "pais_portugues": "Arábia Saudita",
+    "pais_ingles": "Saudi Arabia"
+  },
+  {
+    "pais_sem_acentos": "Senegal",
+    "pais_portugues": "Senegal",
+    "pais_ingles": "Senegal"
+  },
+  {
+    "pais_sem_acentos": "Servia",
+    "pais_portugues": "Sérvia",
+    "pais_ingles": "Serbia"
+  },
+  {
+    "pais_sem_acentos": "Seychelles",
+    "pais_portugues": "Seychelles",
+    "pais_ingles": "Seychelles"
+  },
+  {
+    "pais_sem_acentos": "Serra Leoa",
+    "pais_portugues": "Serra Leoa",
+    "pais_ingles": "Sierra Leone"
+  },
+  {
+    "pais_sem_acentos": "Cingapura",
+    "pais_portugues": "Cingapura",
+    "pais_ingles": "Singapore"
+  },
+  {
+    "pais_sem_acentos": "Eslovaquia",
+    "pais_portugues": "Eslováquia",
+    "pais_ingles": "Slovakia"
+  },
+  {
+    "pais_sem_acentos": "Eslovenia",
+    "pais_portugues": "Eslovênia",
+    "pais_ingles": "Slovenia"
+  },
+  {
+    "pais_sem_acentos": "Ilhas Salomao",
+    "pais_portugues": "Ilhas Salomão",
+    "pais_ingles": "Solomon Islands"
+  },
+  {
+    "pais_sem_acentos": "Somalia",
+    "pais_portugues": "Somália",
+    "pais_ingles": "Somalia"
+  },
+  {
+    "pais_sem_acentos": "Africa do Sul",
+    "pais_portugues": "África do Sul",
+    "pais_ingles": "South Africa"
+  },
+  {
+    "pais_sem_acentos": "Sudao do Sul",
+    "pais_portugues": "Sudão do Sul",
+    "pais_ingles": "South Sudan"
+  },
+  {
+    "pais_sem_acentos": "Espanha",
+    "pais_portugues": "Espanha",
+    "pais_ingles": "Spain"
+  },
+  {
+    "pais_sem_acentos": "Sri Lanka",
+    "pais_portugues": "Sri Lanka",
+    "pais_ingles": "Sri Lanka"
+  },
+  {
+    "pais_sem_acentos": "Sudao",
+    "pais_portugues": "Sudão",
+    "pais_ingles": "Sudan"
+  },
+  {
+    "pais_sem_acentos": "Suriname",
+    "pais_portugues": "Suriname",
+    "pais_ingles": "Suriname"
+  },
+  {
+    "pais_sem_acentos": "Suecia",
+    "pais_portugues": "Suécia",
+    "pais_ingles": "Sweden"
+  },
+  {
+    "pais_sem_acentos": "Suica",
+    "pais_portugues": "Suíça",
+    "pais_ingles": "Switzerland"
+  },
+  {
+    "pais_sem_acentos": "Siria",
+    "pais_portugues": "Síria",
+    "pais_ingles": "Syria"
+  },
+  {
+    "pais_sem_acentos": "Taiwan",
+    "pais_portugues": "Taiwan",
+    "pais_ingles": "Taiwan*"
+  },
+  {
+    "pais_sem_acentos": "Tajiquistao",
+    "pais_portugues": "Tajiquistão",
+    "pais_ingles": "Tajikistan"
+  },
+  {
+    "pais_sem_acentos": "Tanzania",
+    "pais_portugues": "Tanzânia",
+    "pais_ingles": "Tanzania"
+  },
+  {
+    "pais_sem_acentos": "Tailandia",
+    "pais_portugues": "Tailândia",
+    "pais_ingles": "Thailand"
+  },
+  {
+    "pais_sem_acentos": "Timor-Leste",
+    "pais_portugues": "Timor-Leste",
+    "pais_ingles": "Timor-Leste"
+  },
+  {
+    "pais_sem_acentos": "Togo",
+    "pais_portugues": "Togo",
+    "pais_ingles": "Togo"
+  },
+  {
+    "pais_sem_acentos": "Tonga",
+    "pais_portugues": "Tonga",
+    "pais_ingles": "Tonga"
+  },
+  {
+    "pais_sem_acentos": "Trinidad e Tobago",
+    "pais_portugues": "Trinidad e Tobago",
+    "pais_ingles": "Trinidad and Tobago"
+  },
+  {
+    "pais_sem_acentos": "Tunisia",
+    "pais_portugues": "Tunísia",
+    "pais_ingles": "Tunisia"
+  },
+  {
+    "pais_sem_acentos": "Turquia",
+    "pais_portugues": "Turquia",
+    "pais_ingles": "Turkey"
+  },
+  {
+    "pais_sem_acentos": "Tuvalu",
+    "pais_portugues": "Tuvalu",
+    "pais_ingles": "Tuvalu"
+  },
+  {
+    "pais_sem_acentos": "EUA",
+    "pais_portugues": "EUA",
+    "pais_ingles": "US"
+  },
+  {
+    "pais_sem_acentos": "Uganda",
+    "pais_portugues": "Uganda",
+    "pais_ingles": "Uganda"
+  },
+  {
+    "pais_sem_acentos": "Ucrania",
+    "pais_portugues": "Ucrânia",
+    "pais_ingles": "Ukraine"
+  },
+  {
+    "pais_sem_acentos": "Emirados Arabes Unidos",
+    "pais_portugues": "Emirados Árabes Unidos",
+    "pais_ingles": "United Arab Emirates"
+  },
+  {
+    "pais_sem_acentos": "Reino Unido",
+    "pais_portugues": "Reino Unido",
+    "pais_ingles": "United Kingdom"
+  },
+  {
+    "pais_sem_acentos": "Uruguai",
+    "pais_portugues": "Uruguai",
+    "pais_ingles": "Uruguay"
+  },
+  {
+    "pais_sem_acentos": "Uzbequistao",
+    "pais_portugues": "Uzbequistão",
+    "pais_ingles": "Uzbekistan"
+  },
+  {
+    "pais_sem_acentos": "Vanuatu",
+    "pais_portugues": "Vanuatu",
+    "pais_ingles": "Vanuatu"
+  },
+  {
+    "pais_sem_acentos": "Venezuela",
+    "pais_portugues": "Venezuela",
+    "pais_ingles": "Venezuela"
+  },
+  {
+    "pais_sem_acentos": "Vietna",
+    "pais_portugues": "Vietnã",
+    "pais_ingles": "Vietnam"
+  },
+  {
+    "pais_sem_acentos": "Cisjordania e Gaza",
+    "pais_portugues": "Cisjordânia e Gaza",
+    "pais_ingles": "West Bank and Gaza"
+  },
+  {
+    "pais_sem_acentos": "Iemen",
+    "pais_portugues": "Iêmen",
+    "pais_ingles": "Yemen"
+  },
+  {
+    "pais_sem_acentos": "Zambia",
+    "pais_portugues": "Zâmbia",
+    "pais_ingles": "Zambia"
+  },
+  {
+    "pais_sem_acentos": "Zimbabue",
+    "pais_portugues": "Zimbábue",
+    "pais_ingles": "Zimbabwe"
+  }
+]
