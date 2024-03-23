@@ -36,6 +36,10 @@ public class BenchmarkTotal {
 	@JoinColumn(name = "id_benchmark_pais_2")
 	private BenchmarkPais benchmarkPais2;
 	
+	public Long getId() {
+		return id;
+	}
+	
 	public String getNomeBenchmark() {
 		return nomeBenchmark;
 	}
