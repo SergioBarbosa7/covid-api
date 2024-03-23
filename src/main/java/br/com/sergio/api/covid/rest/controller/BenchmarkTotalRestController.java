@@ -25,6 +25,11 @@ public class BenchmarkTotalRestController {
 		 return benchmarkRestService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial, dataFinal);
 	}
 	
+	@GetMapping("/lista")
+	public ResponseEntity<List<ResumoBenchmarkDTO>> obtemListaBenchmarks(){
+		return benchmarkRestService.obtemListaBenchmarks();
+	}
+	
 	@DeleteMapping("/{id}")
 	public String deletaBenchmarkPeloId(@PathVariable Long id) {
 		return null;
