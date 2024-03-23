@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Lob;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
@@ -19,10 +20,12 @@ public class JsonsBenchmarkPais {
 	@GeneratedValue(strategy =  GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name = "json_casos")
+	@Lob
+	@Column(name = "json_casos", columnDefinition = "text")
 	private String jsonCasos;
 	
-	@Column(name = "json_mortes")
+	@Lob
+	@Column(name = "json_mortes", columnDefinition = "text")
 	private String jsonMortes;
 	
 	@OneToOne(optional = false, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
