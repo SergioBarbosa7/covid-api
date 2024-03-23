@@ -4,6 +4,8 @@ package br.com.sergio.api.covid.processador;
 import br.com.sergio.api.covid.conversor.impl.ConversorMapDadosExternosToListDadosPorDia;
 import br.com.sergio.api.covid.external.ExternalDadosPorDia;
 import br.com.sergio.api.covid.model.DadosPorDia;
+import br.com.sergio.api.covid.utils.json.ConversorDados;
+import com.google.gson.reflect.TypeToken;
 import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 import java.util.Comparator;
