@@ -14,11 +14,20 @@ import java.util.stream.Collectors;
 @Component
 public class ProcessadorDadosDia {
 
-	ConversorMapDadosExternosToListDadosPorDia conversorDadosDias = new ConversorMapDadosExternosToListDadosPorDia();
+	private ConversorMapDadosExternosToListDadosPorDia conversorDadosDias = new ConversorMapDadosExternosToListDadosPorDia();
 	
+	private ConversorDados conversorJson;
+	
+	public ProcessadorDadosDia(ConversorDados conversorJson) {
+		this.conversorJson = conversorJson;
+	}
 	
 	public List<DadosPorDia> converteDadosPorDia(Map<String, ExternalDadosPorDia> mapExterno) {
 		return conversorDadosDias.converter(mapExterno);
+	}
+	
+	public List<DadosPorDia> obtemDadosPorDiaDoJson(String json) {
+		return conversorJson.converterDadosDoJson(json, new TypeToken<List<DadosPorDia>>(){}.getType());
 	}
 	
 	public Integer obtemTotalFinal(List<DadosPorDia> lista){
@@ -45,11 +54,10 @@ public class ProcessadorDadosDia {
 		return listaFiltrada;
 	}
 	
-	public Integer obtemPicoDeCasosPorDia(List<DadosPorDia> lista){
+	public DadosPorDia obtemPicoPorDia(List<DadosPorDia> lista){
 		return lista.stream()
-				.min(Comparator.comparingInt(DadosPorDia::getNovos))
-				.get()
-				.getNovos();
+				.max(Comparator.comparingInt(DadosPorDia::getNovos))
+				.get();
 	}
 	
 	public Integer obtemTotalNoPeriodo(List<DadosPorDia> lista){
