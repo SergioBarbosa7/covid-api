@@ -4,8 +4,13 @@ import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.model.BenchmarkTotal;
 import br.com.sergio.api.covid.processador.ProcessadorBenchmarkTotal;
 import br.com.sergio.api.covid.repository.BenchmarkTotalRepository;
-import br.com.sergio.api.covid.utils.ConversorDados;
+import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
+import br.com.sergio.api.covid.rest.dto.ResumoBenchmarkDTO;
+import br.com.sergio.api.covid.rest.dto.factory.BenchmarkDTOFactory;
+import br.com.sergio.api.covid.rest.dto.factory.ResumoBenchmarkDTOFactory;
 import org.springframework.stereotype.Service;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
