@@ -33,10 +33,12 @@ public class BenchmarkTotalService {
 		return benchmarkTotalRepository.saveAndFlush(benchmarkTotal);
 	}
 	
-	public BenchmarkTotal obtemOptionalBenchmarkTotalPeloId(Long id){
-		Optional<BenchmarkTotal> optionalBenchmark =  benchmarkTotalRepository.findById(id);
-		return optionalBenchmark.orElse(null);
-		
+	public BenchmarkTotalDTO obtemBenchmarkTotalPeloId(Long id) {
+		Optional<BenchmarkTotal> optionalBenchmark = benchmarkTotalRepository.findById(id);
+		if (optionalBenchmark.isPresent()) {
+			return benchmarkDTOFactory.geraDTOBenchmark(optionalBenchmark.get());
+		}
+		return null;
 	}
 	
 }
