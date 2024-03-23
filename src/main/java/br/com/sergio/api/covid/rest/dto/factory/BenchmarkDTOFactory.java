@@ -2,13 +2,36 @@ package br.com.sergio.api.covid.rest.dto.factory;
 
 import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.model.BenchmarkTotal;
+import br.com.sergio.api.covid.model.DadosPorDia;
+import br.com.sergio.api.covid.processador.ProcessadorDadosDia;
 import br.com.sergio.api.covid.rest.dto.BenchmarkPaisDTO;
 import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
+import org.springframework.stereotype.Component;
+import java.sql.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+@Component
 public class BenchmarkDTOFactory {
-
-	public BenchmarkTotalDTO geraDTOBenchmark(BenchmarkTotal benchmarkTotal){
 	
+	
+	private ProcessadorDadosDia processadorDadosDia;
+	
+	public BenchmarkDTOFactory( ProcessadorDadosDia processadorDadosDia) {
+		this.processadorDadosDia = processadorDadosDia;
+	}
+	
+	public BenchmarkTotalDTO geraDTOBenchmark(BenchmarkTotal benchmarkTotal) {
+		BenchmarkTotalDTO dto = new BenchmarkTotalDTO();
+		dto.setNome(benchmarkTotal.getNomeBenchmark());
+		dto.setPais1(benchmarkTotal.getBenchmarkPais1().getNomePais());
+		dto.setPais2(benchmarkTotal.getBenchmarkPais2().getNomePais());
+		dto.setDataInicial(benchmarkTotal.getDataInicial());
+		dto.setDataFinal(benchmarkTotal.getDataInicial());
+		dto.setIdBenchmark(benchmarkTotal.getId());
+		dto.setBenchmarkPais1(geraDTOBenchmarkPais(benchmarkTotal.getBenchmarkPais1()));
+		dto.setBenchmarkPais2(geraDTOBenchmarkPais(benchmarkTotal.getBenchmarkPais2()));
+		return dto;
 	}
 	
 	public BenchmarkPaisDTO geraDTOBenchmarkPais(BenchmarkPais benchmarkPais) {
