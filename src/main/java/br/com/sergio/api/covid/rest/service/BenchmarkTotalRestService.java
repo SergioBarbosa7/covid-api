@@ -2,8 +2,12 @@ package br.com.sergio.api.covid.rest.service;
 
 import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.model.BenchmarkTotal;
+import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
+import br.com.sergio.api.covid.rest.dto.ResumoBenchmarkDTO;
 import br.com.sergio.api.covid.service.BenchmarkTotalService;
-import br.com.sergio.api.covid.utils.ConversorDados;
+import br.com.sergio.api.covid.utils.json.ConversorDados;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 
@@ -18,19 +22,17 @@ public class BenchmarkTotalRestService {
 		this.conversorDados = conversorDados;
 	}
 	
-	public String criaBenchmarkTotal(String nome, String pais1, String pais2, String dataInicial, String dataFinal) {
-		return conversorDados.converterDadosParaJson(
-				benchmarkTotalService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial, dataFinal),
-				BenchmarkTotal.class);
+	public ResponseEntity<ResumoBenchmarkDTO> criaBenchmarkTotal(String nome, String pais1, String pais2, String dataInicial, String dataFinal) {
+		return new ResponseEntity<>(benchmarkTotalService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial,
+				dataFinal), HttpStatus.OK);
 	}
 	
-	public String obtemBenchmarkTotalPeloId(Long id){
-		BenchmarkTotal benchmarkTotal = benchmarkTotalService.obtemOptionalBenchmarkTotalPeloId(id);
-		if(benchmarkTotal != null){
-			return conversorDados.converterDadosParaJson(benchmarkTotal, BenchmarkTotal.class);
+	public ResponseEntity<BenchmarkTotalDTO> obtemBenchmarkTotalPeloId(Long id) {
+		BenchmarkTotalDTO benchmarkTotal = benchmarkTotalService.obtemBenchmarkTotalPeloId(id);
+		if (benchmarkTotal != null) {
+			return new ResponseEntity<>(benchmarkTotal, HttpStatus.OK);
 		}
-		
-		return "404 - Não encontrado";
+		return ResponseEntity.notFound().build();
 	}
 	
 }
