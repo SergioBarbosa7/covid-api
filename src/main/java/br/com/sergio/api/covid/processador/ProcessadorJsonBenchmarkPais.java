@@ -2,7 +2,7 @@ package br.com.sergio.api.covid.processador;
 
 import br.com.sergio.api.covid.model.DadosPorDia;
 import br.com.sergio.api.covid.model.JsonsBenchmarkPais;
-import br.com.sergio.api.covid.utils.ConversorDados;
+import br.com.sergio.api.covid.utils.json.ConversorDados;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.stereotype.Component;
 import java.util.List;
