@@ -13,24 +13,30 @@ public class BenchmarkTotalService {
 	
 	BenchmarkPaisService benchmarkPaisService;
 	ProcessadorBenchmarkTotal processadorBenchmarkTotal;
-	ConversorDados conversorDados;
+	ResumoBenchmarkDTOFactory resumoBenchmarkDTOFactory;
 	BenchmarkTotalRepository benchmarkTotalRepository;
+	BenchmarkDTOFactory benchmarkDTOFactory;
 	
 	public BenchmarkTotalService(BenchmarkPaisService benchmarkPaisService,
 								 ProcessadorBenchmarkTotal processadorBenchmarkTotal,
-								 BenchmarkTotalRepository benchmarkTotalRepository) {
+								 BenchmarkTotalRepository benchmarkTotalRepository,
+								 BenchmarkDTOFactory benchmarkDTOFactory,
+								 ResumoBenchmarkDTOFactory resumoBenchmarkDTOFactory) {
 		this.benchmarkPaisService = benchmarkPaisService;
 		this.processadorBenchmarkTotal = processadorBenchmarkTotal;
 		this.benchmarkTotalRepository = benchmarkTotalRepository;
+		this.benchmarkDTOFactory = benchmarkDTOFactory;
+		this.resumoBenchmarkDTOFactory = resumoBenchmarkDTOFactory;
 	}
 	
-	public BenchmarkTotal criaBenchmarkTotal(String nome, String pais1, String pais2, String dataInicial,
-											 String dataFinal) {
+	public ResumoBenchmarkDTO criaBenchmarkTotal(String nome, String pais1, String pais2, String dataInicial,
+												 String dataFinal) {
+		
 		BenchmarkPais benchmarkPais1 = benchmarkPaisService.obtemBenchmarkPais(pais1, dataInicial, dataFinal);
 		BenchmarkPais benchmarkPais2 = benchmarkPaisService.obtemBenchmarkPais(pais2, dataInicial, dataFinal);
 		BenchmarkTotal benchmarkTotal = processadorBenchmarkTotal.processaBenchmarkTotal(nome, benchmarkPais1,
 				benchmarkPais2);
-		return benchmarkTotalRepository.saveAndFlush(benchmarkTotal);
+		return resumoBenchmarkDTOFactory.geraResumoBenchmark(benchmarkTotalRepository.saveAndFlush(benchmarkTotal));
 	}
 	
 	public BenchmarkTotalDTO obtemBenchmarkTotalPeloId(Long id) {
