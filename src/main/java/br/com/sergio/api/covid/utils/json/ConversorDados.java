@@ -1,6 +1,8 @@
-package br.com.sergio.api.covid.utils;
+package br.com.sergio.api.covid.utils.json;
 
-import br.com.sergio.api.covid.utils.json.adapter.LocalDateAdapter;
+import br.com.sergio.api.covid.utils.json.adapter.LocalDateDeserializer;
+import br.com.sergio.api.covid.utils.json.adapter.LocalDateSerializer;
+import br.com.sergio.api.covid.utils.json.exclusion.JsonIgnoreExclusionStrategy;
 import org.springframework.stereotype.Component;
 import java.lang.reflect.Type;
 import java.time.LocalDate;

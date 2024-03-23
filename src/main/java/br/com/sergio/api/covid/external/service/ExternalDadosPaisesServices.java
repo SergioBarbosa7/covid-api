@@ -9,7 +9,7 @@ import br.com.sergio.api.covid.external.ExternalListaEnvelopesDadosPorPais;
 import br.com.sergio.api.covid.external.ExternalPacoteCasosEMortes;
 import br.com.sergio.api.covid.external.handler.ExternalDadosPaisesHandler;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
-import br.com.sergio.api.covid.utils.ConversorDados;
+import br.com.sergio.api.covid.utils.json.ConversorDados;
 import org.springframework.stereotype.Service;
 
 @Service
