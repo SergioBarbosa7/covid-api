@@ -1,11 +1,15 @@
 package br.com.sergio.api.covid.rest.controller;
 
+import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
+import br.com.sergio.api.covid.rest.dto.ResumoBenchmarkDTO;
 import br.com.sergio.api.covid.rest.service.BenchmarkTotalRestService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController("/api/benchmark/total/")
 public class BenchmarkTotalRestController {
@@ -30,14 +34,14 @@ public class BenchmarkTotalRestController {
 		return benchmarkRestService.obtemListaBenchmarks();
 	}
 	
-	@DeleteMapping("/{id}")
-	public String deletaBenchmarkPeloId(@PathVariable Long id) {
-		return null;
+	@DeleteMapping("{id}")
+	public ResponseEntity<String> deletaBenchmarkPeloId(@PathVariable Long id) {
+		return benchmarkRestService.deletaBenchmarkPeloId(id);
 	}
 	
-	@GetMapping("/{id}")
-	public String obtemBenchmarkPeloId(@PathVariable Long id) {
-		return null;
+	@GetMapping("{id}")
+	public ResponseEntity<BenchmarkTotalDTO> obtemBenchmarkPeloId(@PathVariable Long id) {
+		return benchmarkRestService.obtemBenchmarkTotalPeloId(id);
 	}
 	
 }

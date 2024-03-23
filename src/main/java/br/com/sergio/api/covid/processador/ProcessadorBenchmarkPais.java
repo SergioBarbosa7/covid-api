@@ -5,7 +5,6 @@ import br.com.sergio.api.covid.external.ExternalPacoteCasosEMortes;
 import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.model.DadosPorDia;
 import br.com.sergio.api.covid.model.JsonsBenchmarkPais;
-import br.com.sergio.api.covid.utils.ConversorDados;
 import org.springframework.stereotype.Component;
 import java.sql.Date;
 import java.time.LocalDate;
@@ -19,8 +18,8 @@ public class ProcessadorBenchmarkPais {
 	
 	private ProcessadorJsonBenchmarkPais processadorJsonBenchmarkPais;
 	
-	public ProcessadorBenchmarkPais(ProcessadorJsonBenchmarkPais processadorJsonBenchmarkPais) {
-		processadorDadosDia = new ProcessadorDadosDia();
+	public ProcessadorBenchmarkPais(ProcessadorJsonBenchmarkPais processadorJsonBenchmarkPais, ProcessadorDadosDia processadorDadosDia) {
+		this.processadorDadosDia = processadorDadosDia;
 		this.processadorJsonBenchmarkPais = processadorJsonBenchmarkPais;
 	}
 	
