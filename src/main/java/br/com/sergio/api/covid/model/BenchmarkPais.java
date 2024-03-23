@@ -1,5 +1,6 @@
 package br.com.sergio.api.covid.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,6 +29,7 @@ public class BenchmarkPais {
 	@Column(name = "data_final")
 	private Date dataFinal;
 	
+	@JsonIgnore
 	@OneToOne(mappedBy = "benchmarkPais", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY )
 	private JsonsBenchmarkPais jsonsBenchmarkPais;
 	
