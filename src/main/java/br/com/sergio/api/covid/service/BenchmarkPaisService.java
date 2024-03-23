@@ -4,7 +4,7 @@ import br.com.sergio.api.covid.external.ExternalPacoteCasosEMortes;
 import br.com.sergio.api.covid.external.service.ExternalDadosPaisesServices;
 import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.processador.ProcessadorBenchmarkPais;
-import br.com.sergio.api.covid.utils.ConversorDados;
+import br.com.sergio.api.covid.utils.json.ConversorDados;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
