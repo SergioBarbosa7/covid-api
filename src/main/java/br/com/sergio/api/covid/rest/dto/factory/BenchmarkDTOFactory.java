@@ -48,7 +48,7 @@ public class BenchmarkDTOFactory {
 	}
 	
 	public void preencherEstatisticasPais(BenchmarkPaisDTO dto, BenchmarkPais benchmarkPais) {
-		Double mortalidade = (double) (benchmarkPais.getMortesNoPeriodo() / benchmarkPais.getCasosNoPeriodo()) * 100;
+		Double mortalidade = (benchmarkPais.getMortesNoPeriodo().doubleValue() / benchmarkPais.getCasosNoPeriodo().doubleValue()) * 100;
 		dto.setTaxaDeMortalidade(mortalidade);
 		preencherEstatisticasMortePais(dto, processadorDadosDia.obtemDadosPorDiaDoJson(
 				benchmarkPais.getJsonsBenchmarkPais().getJsonMortes()));
