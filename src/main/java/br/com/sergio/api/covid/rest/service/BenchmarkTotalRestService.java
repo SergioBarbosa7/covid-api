@@ -22,8 +22,8 @@ public class BenchmarkTotalRestService {
 	}
 	
 	public ResponseEntity<ResumoBenchmarkDTO> criaBenchmarkTotal(String nome, String pais1, String pais2, String dataInicial, String dataFinal) {
-		return new ResponseEntity<>(benchmarkTotalService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial,
-				dataFinal), HttpStatus.OK);
+			return new ResponseEntity<>(benchmarkTotalService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial, dataFinal),
+					HttpStatus.OK);
 	}
 	
 	public ResponseEntity<BenchmarkTotalDTO> obtemBenchmarkTotalPeloId(Long id) {
@@ -33,6 +33,7 @@ public class BenchmarkTotalRestService {
 		}
 		return ResponseEntity.notFound().build();
 	}
+	
 	public ResponseEntity<String> deletaBenchmarkPeloId(Long id) {
 		benchmarkTotalService.deletaBenchmarkTotalPeloID(id);
 		return new ResponseEntity<>("BenchmarkDeletada", HttpStatus.OK);
