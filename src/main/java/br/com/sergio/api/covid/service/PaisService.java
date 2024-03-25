@@ -1,5 +1,6 @@
 package br.com.sergio.api.covid.service;
 
+import br.com.sergio.api.covid.exceptions.NaoEncontradoException;
 import br.com.sergio.api.covid.model.Pais;
 import br.com.sergio.api.covid.repository.PaisRepository;
 import org.springframework.stereotype.Service;
@@ -24,5 +25,15 @@ public class PaisService {
 	
 	public void salvaPais(Pais pais){
 		paisRepository.saveAndFlush(pais);
+	}
+	public Pais obtemPaisPeloNome(String nomePais){
+		Pais pais = paisRepository.obtemPaisPeloNomeEmPortugues(nomePais);
+		if(pais != null){
+			return pais;
+		}
+		throw new NaoEncontradoException(Pais.class.getSimpleName(), nomePais);
+	}
+	public String obtemNomeDoPaisEmIngles(String pais){
+		return obtemPaisPeloNome(pais).getNomeIngles();
 	}
 }
