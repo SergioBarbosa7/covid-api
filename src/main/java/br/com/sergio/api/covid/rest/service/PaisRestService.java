@@ -20,7 +20,16 @@ public class PaisRestService {
 		List<Pais> listaPais = paisService.obtemTodosPaises();
 		List<String> listaNomes = new ArrayList<>();
 		listaPais.forEach(p -> {
-			listaNomes.add(p.getNomeSemAcentuacao().toLowerCase());
+			listaNomes.add(p.getNomeSemAcentuacao());
+		});
+		return new ResponseEntity<>(listaNomes, HttpStatus.OK);
+	}
+	
+	public ResponseEntity<List<String>> obtemNomesPaises(){
+		List<Pais> listaPais = paisService.obtemTodosPaises();
+		List<String> listaNomes = new ArrayList<>();
+		listaPais.forEach(p -> {
+			listaNomes.add(p.getNomePortugues());
 		});
 		return new ResponseEntity<>(listaNomes, HttpStatus.OK);
 	}
