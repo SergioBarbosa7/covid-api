@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/api/benchmark/total/")
 public class BenchmarkTotalRestController {
 	
-	BenchmarkTotalRestService benchmarkRestService;
+	private BenchmarkTotalRestService benchmarkRestService;
 	
 	public BenchmarkTotalRestController(BenchmarkTotalRestService benchmarkRestService) {
 		this.benchmarkRestService = benchmarkRestService;
