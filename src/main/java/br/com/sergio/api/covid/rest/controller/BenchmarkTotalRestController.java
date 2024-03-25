@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/benchmark/total/")
+@RequestMapping(value = "/api/benchmark/total/")
 public class BenchmarkTotalRestController {
 	
 	private BenchmarkTotalRestService benchmarkRestService;
@@ -22,7 +22,7 @@ public class BenchmarkTotalRestController {
 		this.benchmarkRestService = benchmarkRestService;
 	}
 	
-	@PostMapping("{nome}/paises/{pais1}/{pais2}/data/{dataInicial}/to/{dataFinal}")
+	@PostMapping(value = "{nome}/paises/{pais1}/{pais2}/data/{dataInicial}/to/{dataFinal}")
 	public ResponseEntity<ResumoBenchmarkDTO> criaBenchmarkTotal(@PathVariable String nome,
 																 @PathVariable String pais1,
 																 @PathVariable String pais2,
@@ -31,17 +31,17 @@ public class BenchmarkTotalRestController {
 		 return benchmarkRestService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial, dataFinal);
 	}
 	
-	@GetMapping("/lista")
+	@GetMapping(value = "/lista")
 	public ResponseEntity<List<ResumoBenchmarkDTO>> obtemListaBenchmarks(){
 		return benchmarkRestService.obtemListaBenchmarks();
 	}
 	
-	@DeleteMapping("{id}")
+	@DeleteMapping(value = "{id}")
 	public ResponseEntity<String> deletaBenchmarkPeloId(@PathVariable Long id) {
 		return benchmarkRestService.deletaBenchmarkPeloId(id);
 	}
 	
-	@GetMapping("{id}")
+	@GetMapping(value = "{id}")
 	public ResponseEntity<BenchmarkTotalDTO> obtemBenchmarkPeloId(@PathVariable Long id) {
 		return benchmarkRestService.obtemBenchmarkTotalPeloId(id);
 	}
