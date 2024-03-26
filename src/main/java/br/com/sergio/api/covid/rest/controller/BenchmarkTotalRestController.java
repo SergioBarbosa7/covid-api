@@ -30,13 +30,14 @@ public class BenchmarkTotalRestController {
 		this.benchmarkRestService = benchmarkRestService;
 	}
 	
-	@PostMapping(value = "{nome}/paises/{pais1}/{pais2}/data/{dataInicial}/to/{dataFinal}")
-	public ResponseEntity<ResumoBenchmarkDTO> criaBenchmarkTotal(@PathVariable String nome,
-																 @PathVariable String pais1,
-																 @PathVariable String pais2,
-																 @PathVariable String dataInicial,
-																 @PathVariable String dataFinal) {
-		 return benchmarkRestService.criaBenchmarkTotal(nome, pais1, pais2, dataInicial, dataFinal);
+	@Operation(summary = "Cria uma Benchmark entre países", description = "Cria uma benchmark entre dois países e " +
+			"retorna seu resumo")
+	@PostMapping(value = "/criar/")
+	public ResponseEntity<ResumoBenchmarkDTO> criaBenchmarkTotal(
+			@Parameter(name = "Corpo da requisição para criar uma benchmark entre países", content = @Content(schema
+					= @Schema(implementation = BenchmarkRequest.class))) @RequestBody BenchmarkRequest request) {
+		return benchmarkRestService.criaBenchmarkTotal(request.getNome(), request.getNomePais1(),
+				request.getNomePais2(), request.getDataInicial(), request.getDataFinal());
 	}
 	
 	@Operation(summary = "Lista as Benchmarks", description = "Disponibiliza uma lista de resumos das Benchmarks")
