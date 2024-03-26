@@ -34,12 +34,6 @@ public class ExternalDadosPaisesServices {
 	}
 	
 	
-	public String obtemJsonDoEnvelope(String pais, String tipo) {
-		ExternalEnvelopeDadosPorPais envelope = obtemEnvelopeDadosPais(pais, tipo);
-		return conversorDados.converterDadosParaJson(envelope, ExternalEnvelopeDadosPorPais.class);
-	}
-	
-	
 	public ExternalEnvelopeDadosPorPais obtemEnvelopeDadosPais(String pais, String tipo) {
 		String json = consumoApi.obterDados(construtorDeURL.constroiURL(pais, tipo));
 		ExternalListaEnvelopesDadosPorPais listaEnvelopesDadosPorPais = conversorDados.converterDadosDoJson(json,
