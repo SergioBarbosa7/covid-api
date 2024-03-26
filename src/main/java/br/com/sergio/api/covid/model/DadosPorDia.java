@@ -5,9 +5,18 @@ import java.time.LocalDate;
 
 public class DadosPorDia {
 	
-	LocalDate data;
-	Integer total;
-	Integer novos;
+	private LocalDate data;
+	private Integer total;
+	private Integer novos;
+	
+	public DadosPorDia() {
+	}
+	
+	public DadosPorDia(String data, Integer total, Integer novos) {
+		this.data = LocalDate.parse(data);
+		this.total = total;
+		this.novos = novos;
+	}
 	
 	public LocalDate getData() {
 		return data;
