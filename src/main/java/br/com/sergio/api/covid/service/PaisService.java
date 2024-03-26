@@ -27,7 +27,7 @@ public class PaisService {
 		paisRepository.saveAndFlush(pais);
 	}
 	public Pais obtemPaisPeloNome(String nomePais){
-		Pais pais = paisRepository.obtemPaisPeloNomeEmPortugues(nomePais);
+		Pais pais = paisRepository.obtemPaisPeloNomeEmPortugues(nomePais.toLowerCase());
 		if(pais != null){
 			return pais;
 		}
