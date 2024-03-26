@@ -1,4 +1,4 @@
-package br.com.sergio.api.covid.rest.requerst;
+package br.com.sergio.api.covid.rest.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 

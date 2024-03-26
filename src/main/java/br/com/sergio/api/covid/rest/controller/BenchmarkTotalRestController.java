@@ -2,7 +2,7 @@ package br.com.sergio.api.covid.rest.controller;
 
 import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
 import br.com.sergio.api.covid.rest.dto.ResumoBenchmarkDTO;
-import br.com.sergio.api.covid.rest.requerst.BenchmarkRequest;
+import br.com.sergio.api.covid.rest.request.BenchmarkRequest;
 import br.com.sergio.api.covid.rest.service.BenchmarkTotalRestService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
