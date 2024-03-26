@@ -12,6 +12,8 @@ import br.com.sergio.api.covid.model.Pais;
 import br.com.sergio.api.covid.service.PaisService;
 import br.com.sergio.api.covid.utils.ConstrutorDeURL;
 import br.com.sergio.api.covid.utils.json.ConversorDados;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -22,7 +24,7 @@ public class ExternalDadosPaisesServices {
 	private final PaisService paisService;
 	private final ConstrutorDeURL construtorDeURL;
 	private final ExternalDadosPaisesHandler paisesHandler;
-	
+	private static final Logger LOG = LogManager.getLogger(ExternalDadosPaisesServices.class);
 	
 	public ExternalDadosPaisesServices(ConsumoApi consumoApi, PaisService paisService, ExternalDadosPaisesHandler paisesHandler,
 									   ConstrutorDeURL construtorDeURL, ConversorDados conversorDados) {
@@ -43,6 +45,7 @@ public class ExternalDadosPaisesServices {
 	
 	public ExternalPacoteCasosEMortes obtemPacoteCasosEMortes(String nomePais){
 		Pais pais = paisService.obtemPaisPeloNome(nomePais);
+		LOG.info("Buscando pacote de casos e mortes para o país {}/{}", pais.getNomePortugues(), pais.getNomeIngles());
 		ExternalEnvelopeDadosPorPais envelopeCasos = obtemEnvelopeDadosPais(pais.getNomeIngles(), CASOS);
 		ExternalEnvelopeDadosPorPais envelopeMortes = obtemEnvelopeDadosPais(pais.getNomeIngles(), MORTES);
 		
@@ -50,6 +53,7 @@ public class ExternalDadosPaisesServices {
 		pacote.setDadosCasos(envelopeCasos.getMapDataParaDados());
 		pacote.setDadosMortes(envelopeMortes.getMapDataParaDados());
 		pacote.setPais(pais.getNomePortugues());
+		LOG.info("Pacote encontrado!");
 		return pacote;
 	}
 }

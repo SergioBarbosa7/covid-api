@@ -1,5 +1,6 @@
 package br.com.sergio.api.covid.service;
 
+import br.com.sergio.api.covid.exceptions.NaoEncontradoException;
 import br.com.sergio.api.covid.model.BenchmarkPais;
 import br.com.sergio.api.covid.model.BenchmarkTotal;
 import br.com.sergio.api.covid.processador.ProcessadorBenchmarkTotal;
@@ -8,6 +9,8 @@ import br.com.sergio.api.covid.rest.dto.BenchmarkTotalDTO;
 import br.com.sergio.api.covid.rest.dto.ResumoBenchmarkDTO;
 import br.com.sergio.api.covid.rest.dto.factory.BenchmarkDTOFactory;
 import br.com.sergio.api.covid.rest.dto.factory.ResumoBenchmarkDTOFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +19,12 @@ import java.util.Optional;
 @Service
 public class BenchmarkTotalService {
 	
-	BenchmarkPaisService benchmarkPaisService;
-	ProcessadorBenchmarkTotal processadorBenchmarkTotal;
-	ResumoBenchmarkDTOFactory resumoBenchmarkDTOFactory;
-	BenchmarkTotalRepository benchmarkTotalRepository;
-	BenchmarkDTOFactory benchmarkDTOFactory;
+	private final BenchmarkPaisService benchmarkPaisService;
+	private final ProcessadorBenchmarkTotal processadorBenchmarkTotal;
+	private final ResumoBenchmarkDTOFactory resumoBenchmarkDTOFactory;
+	private final BenchmarkTotalRepository benchmarkTotalRepository;
+	private final BenchmarkDTOFactory benchmarkDTOFactory;
+	private static final Logger LOG = LogManager.getLogger(BenchmarkTotalService.class);
 	
 	public BenchmarkTotalService(BenchmarkPaisService benchmarkPaisService,
 								 ProcessadorBenchmarkTotal processadorBenchmarkTotal,
@@ -49,7 +53,7 @@ public class BenchmarkTotalService {
 		if (optionalBenchmark.isPresent()) {
 			return benchmarkDTOFactory.geraDTOBenchmark(optionalBenchmark.get());
 		}
-		return null;
+		throw new NaoEncontradoException(BenchmarkTotal.class.getSimpleName(), id.toString());
 	}
 	
 	public void deletaBenchmarkTotalPeloID(Long id) {
@@ -59,6 +63,7 @@ public class BenchmarkTotalService {
 	public List<ResumoBenchmarkDTO> obterListaBenchmarks() {
 		List<ResumoBenchmarkDTO> lista = new ArrayList<>();
 		benchmarkTotalRepository.findAll().forEach(b -> {
+			LOG.info("Adicionando resumo de benchmark {} para a lista", b.getNomeBenchmark());
 			lista.add(resumoBenchmarkDTOFactory.geraResumoBenchmark(b));
 		});
 		return lista;
