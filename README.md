@@ -138,3 +138,49 @@ Obtém uma lista dos países disponíveis sem acentuação.
 * **URL**
   `/api/paises/lista/sem-acentuacao`
 * **Método GET**
+
+# Como executar a aplicação
+
+## Executando com Docker
+
+### Gerar o arquivo JAR
+
+Antes de construir a imagem Docker, você precisa gerar o arquivo JAR da aplicação. 
+
+Você pode fazer isso executando o seguinte comando na raiz do projeto:
+
+```sh
+./mvnw package
+```
+
+### Construir a imagem Docker
+Para construir a imagem Docker, execute o seguinte comando:
+
+```sh
+docker build -t covid-api .
+```
+
+
+### Executar o contêiner Docker
+Para executar o contêiner Docker, use o seguinte comando:
+
+```sh
+docker run -d -p 8080:8080 covid-api
+```
+
+### Verificar se o contêiner está em execução
+Para verificar se o contêiner está em execução, execute o seguinte comando:
+
+```sh
+docker ps
+```
+Isso mostrará uma lista dos contêineres em execução. 
+
+Certifique-se de que o seu contêiner esteja na lista.
+
+### Acessar o swagger
+
+Abra um navegador e vá para http://localhost:8080/swagger-ui/index.html#/
+
+E poderá acessar o swagger da aplicação
+
