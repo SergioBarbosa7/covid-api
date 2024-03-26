@@ -43,7 +43,7 @@ Com isso, fazemos uma requisição tanto dos dados de casos e mortes de um país
 
 Depois tratamos a importação desses dados para o banco de dados JPA, armazenando também os Jsons com dados já tratados
 
-Após a criação dela, consultar a benchmark na api irá trazer dados como pico, média, taxa de mortalidade entre outros
+Após a criação dela, basta consultar a benchmark na api irá trazer dados como pico, média, taxa de mortalidade entre outros
 
  
 ## API de Benchmarks de Comparação 
