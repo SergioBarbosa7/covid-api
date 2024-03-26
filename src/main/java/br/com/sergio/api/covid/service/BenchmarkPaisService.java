@@ -41,7 +41,7 @@ public class BenchmarkPaisService {
 		return benchmarkDTOFactory.geraDTOBenchmarkPais(obtemBenchmarkPais( pais,  stringDataInicial,  stringDataFinal));
 	}
 	
-	private LocalDate converteStringParaData(String stringData) {
+	private LocalDate converteStringParaData(String stringData) throws DateTimeParseException {
 		return LocalDate.parse(stringData, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 	}
 	
