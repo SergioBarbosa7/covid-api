@@ -10,11 +10,13 @@ A partir disso ele ele compila e realiza o processamento desses dados para estat
 
 ### Tecnologias utilizadas
 
-* Java
-* Spring Boot
+* Java 17
+* Spring Boot 3
 * JPA / Hibernate / H2
 * Maven
 * Swagger
+* Junit
+* Docker
 
 ### Processo de criação
 
